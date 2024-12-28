@@ -1,0 +1,456 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    text-align: right; /* Align links to the right */
+    padding: 10px; /* Add some padding for better appearance */
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust the height as needed */
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    display: inline-block; /* Display dropdown inline */
+    margin-right: 20px; /* Add margin to separate dropdown from other links */
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .nav-content {
+    display: block;
+}
+.gym-image {
+    width: 100%;
+    height: 600px;
+}
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    /* Add these styles to your existing style.css file or in the <style> tag in the <head> section */
+
+
+}
+.about-section{
+    background-image: url("5.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.about-section .text-content {
+    max-width: 900px; /* Adjust as needed */
+    color:rgb(151, 38, 151) 
+}
+.about-section .text-content h2 {
+    color: royalblue;/* Adjust as needed */
+}
+
+.about-section .image-content {
+    width: 48%; /* Adjust as needed */
+}
+
+.about-section .image-content img {
+    width: 100%;
+    height: 700px;
+}
+
+
+.text-content {
+    width: 80%;
+    text-align: center;
+}
+.text-content .h2{
+    color: darkmagenta;
+}
+
+.video-content video{
+    width:100%;
+    height: 500px;
+    background-image: url(6.jpg);
+}
+
+.dietchart{
+    max-width: 400px;
+    height: auto;
+}
+
+/*diet plan*/
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.meal-plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+/*diet plan*/
+
+/* Add these styles to your existing style.css file or in the <style> tag in the <head> section */
+/*pricing starts*/
+/*pricing*/
+/* Additional styles for flex container */
+.pricing-section {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+/* Centered h2 above all pricing cards */
+.pricing-cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+/* The rest of the existing styles remain unchanged */
+.pricing-card h3 {
+    color: #333;
+    text-align: center;
+}
+
+.price {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/*pricing ends*/
+
+/*classes starts*/
+.class-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .class-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .class-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .class-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .class-info {
+    color: #555;
+  }
+  
+  .class-schedule {
+    color: #007BFF;
+    font-weight: bold;
+  }
+/*classe ends*/
+
+/*schedule starts*/
+.schedule-container {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .schedule-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+/*schedule ends*/
+
+/*our trainers*/
+
+ .trainer-container{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Centered h2 above all pricing cards */
+
+  
+  .trainer-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+  }
+  
+  .trainer-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .trainer-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-info {
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .trainer-bio {
+    color: #666;
+  }
+/*our trainers*/  
+
+footer {
+    background-color: #a18888;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    margin-right: 30px;
+}
+
+.footer-section h4 {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*pricing*/
+/* Additional styles for flex container */
+.pricing-section {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+/* Centered h2 above all pricing cards */
+.pricing-cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+/* The rest of the existing styles remain unchanged */
+.pricing-card h3 {
+    color: #333;
+    text-align: center;
+}
+
+.price {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
